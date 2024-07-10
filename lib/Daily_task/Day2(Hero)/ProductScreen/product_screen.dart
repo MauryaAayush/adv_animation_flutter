@@ -21,142 +21,143 @@ class _ProductScreenState extends State<ProductScreen> {
       body: Column(
         children: [
           Hero(
-            tag: 'test',
-            child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 20),
-                height: height * 0.45,
-                width: width,
-                decoration: const BoxDecoration(color: Color(0xFF35383F)),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 10,
-                      left: 45,
-                      child: Image.asset(
-                        productData["img"],
-                        height: height * 0.4,
-                        width: width * 0.8,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    Positioned(
-                      top: 30,
-                      left: 10,
-                      child: InkWell(
-                        onTap: () {
-                          setState(() {
-                            count = 0;
-                          });
-
-                          Navigator.of(context).pushReplacementNamed('/home');
-                        },
-                        child:  CircleAvatar(
-                          backgroundColor: Color(0xFF35383F),
-                          child: IconButton(onPressed: () {
-                            Navigator.pop(context);
-                          }, icon: Icon(
-                            Icons.arrow_back_outlined,
-                            color: Colors.white,
-                            size: 30,),
-
-                        ),
-                      ),
-                    ),
-                    ),
-                    // Positioned(
-                    //   top: 35,
-                    //   right: 20,
-                    //   child: InkWell(
-                    //     onTap: () {
-                    //       setState(() {
-                    //         Navigator.of(context).pushNamed('/third');
-                    //       });
-                    //     },
-                    //     child: Stack(
-                    //       children: [
-                    //         const Icon(
-                    //           Icons.shopping_cart_outlined,
-                    //           size: 30,
-                    //           color: Colors.white,
-                    //         ),
-                    //         if (cart
-                    //             .isNotEmpty) // Display count only if the cart is not empty
-                    //           Positioned(
-                    //             top: -5,
-                    //             right: 0,
-                    //             child: Container(
-                    //               padding: const EdgeInsets.all(4),
-                    //               decoration: const BoxDecoration(
-                    //                 shape: BoxShape.circle,
-                    //                 color: Colors.red, // Adjust color as needed
-                    //               ),
-                    //               child: Text(
-                    //                 '${cart.length}',
-                    //                 style: const TextStyle(
-                    //                   color: Colors.white,
-                    //                   fontSize: 12,
-                    //                   fontWeight: FontWeight.bold,
-                    //                 ),
-                    //               ),
-                    //             ),
-                    //           ),
-                    //       ],
-                    //     ),
-                    //   ),
-                    // ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
+            tag:  'hero-${productData['id']}',
+            child: SingleChildScrollView(
+              child: Material(
+                child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 20),
+                    height: height * 0.45,
+                    width: width,
+                    decoration: const BoxDecoration(color: Color(0xFF35383F)),
+                    child: Stack(
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              height: height * 0.008,
-                              width: width * 0.08,
-                              decoration: const BoxDecoration(
+                        Positioned(
+                          top: 10,
+                          left: 45,
+                          child: Image.asset(
+                            productData["img"],
+                            height: height * 0.4,
+                            width: width * 0.8,
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                        Positioned(
+                          top: 30,
+                          left: 10,
+                          child: InkWell(
+                            onTap: () {
+                              
+                              Navigator.pop(context);
+                            },
+                            child:  CircleAvatar(
+                              backgroundColor: Color(0xFF35383F),
+                              child: IconButton(onPressed: () {
+                                Navigator.pop(context);
+                              }, icon: Icon(
+                                Icons.arrow_back_outlined,
                                 color: Colors.white,
-                                borderRadius:
-                                BorderRadius.all(Radius.circular(10)),
-                              ),
+                                size: 30,),
+                
                             ),
-                            Container(
-                              height: height * 0.01,
-                              width: width * 0.04,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFF1F222A),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                            Container(
-                              height: height * 0.01,
-                              width: width * 0.03,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFF1F222A),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                            Container(
-                              height: height * 0.01,
-                              width: width * 0.04,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFF1F222A),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
-                            Container(
-                              height: height * 0.01,
-                              width: width * 0.03,
-                              decoration: const BoxDecoration(
-                                color: Color(0xFF1F222A),
-                                shape: BoxShape.circle,
-                              ),
-                            ),
+                          ),
+                        ),
+                        ),
+                        // Positioned(
+                        //   top: 35,
+                        //   right: 20,
+                        //   child: InkWell(
+                        //     onTap: () {
+                        //       setState(() {
+                        //         Navigator.of(context).pushNamed('/third');
+                        //       });
+                        //     },
+                        //     child: Stack(
+                        //       children: [
+                        //         const Icon(
+                        //           Icons.shopping_cart_outlined,
+                        //           size: 30,
+                        //           color: Colors.white,
+                        //         ),
+                        //         if (cart
+                        //             .isNotEmpty) // Display count only if the cart is not empty
+                        //           Positioned(
+                        //             top: -5,
+                        //             right: 0,
+                        //             child: Container(
+                        //               padding: const EdgeInsets.all(4),
+                        //               decoration: const BoxDecoration(
+                        //                 shape: BoxShape.circle,
+                        //                 color: Colors.red, // Adjust color as needed
+                        //               ),
+                        //               child: Text(
+                        //                 '${cart.length}',
+                        //                 style: const TextStyle(
+                        //                   color: Colors.white,
+                        //                   fontSize: 12,
+                        //                   fontWeight: FontWeight.bold,
+                        //                 ),
+                        //               ),
+                        //             ),
+                        //           ),
+                        //       ],
+                        //     ),
+                        //   ),
+                        // ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  height: height * 0.008,
+                                  width: width * 0.08,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                  ),
+                                ),
+                                Container(
+                                  height: height * 0.01,
+                                  width: width * 0.04,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFF1F222A),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                Container(
+                                  height: height * 0.01,
+                                  width: width * 0.03,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFF1F222A),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                Container(
+                                  height: height * 0.01,
+                                  width: width * 0.04,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFF1F222A),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                Container(
+                                  height: height * 0.01,
+                                  width: width * 0.03,
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xFF1F222A),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                              ],
+                            )
                           ],
                         )
                       ],
-                    )
-                  ],
-                )),
+                    )),
+              ),
+            ),
           ),
           Expanded(
             child: Container(
