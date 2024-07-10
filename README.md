@@ -102,3 +102,32 @@ class MatchingGameScreen extends StatelessWidget {
 <div align="center">
 <a href="https://github.com/MauryaAayush/adv_animation_flutter">-> 👉📚 See The Code 📚 👈<-</a>
 </div>
+
+
+ ##  
+  <h2 align = "center">Lecture-2 -> Hero Widget </h2>
+## Hero Widget
+The Hero widget in Flutter is used for creating a smooth and visually appealing transition between two widgets. It's often used when navigating from one screen to another where an element from the first screen transforms into an element on the second screen.
+
+### 
+<h3 align="center"><i>Images</i></h3>
+
+###
+
+<div align="center">
+
+<img src="https://github.com/MauryaAayush/adv_animation_flutter/assets/143180849/900f521e-6037-42fa-82f9-4ee2742a0293" height=500px hspace=20>
+<img src="https://github.com/MauryaAayush/adv_animation_flutter/assets/143180849/25d903b2-6947-4d4a-8c6e-daab9c2d9a1d" height=500px hspace=20>
+
+</div>
+
+###
+<h3 align="center"><i>Video</i></h3>
+<div align="center"> 
+<video src = "https://github.com/MauryaAayush/adv_animation_flutter/assets/143180849/b02efd2b-5946-4434-9d60-6f286879807b">
+</div>
+
+###
+<div align="center">
+    <a href="https://github.com/MauryaAayush/adv_animation_flutter/tree/master/lib/Daily_task/Day2(Hero)">👉 📚 Go to dart file 📚 👈</a>
+</div>
