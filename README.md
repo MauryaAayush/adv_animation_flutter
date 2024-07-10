@@ -1,5 +1,8 @@
 # Animation Flutter
 
+ ##  
+  <h2 align = "center">Lecture-1 -> Draggable and DragTarget</h2>
+
 A simple matching game built with Flutter. The game involves matching parts of images of fruits to their corresponding halves. The game displays an alert dialog when the player either wins by matching all parts correctly or loses after exhausting all attempts.
 
 ## Features
