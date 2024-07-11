@@ -73,7 +73,7 @@ class _AnimationScreenState extends State<AnimationScreen>
               },
               child: Text('Toggle AnimatedContainer'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             AnimatedOpacity(
               opacity: _opacity,
               duration: Duration(seconds: 1),
@@ -92,7 +92,7 @@ class _AnimationScreenState extends State<AnimationScreen>
               },
               child: Text('Toggle AnimatedOpacity'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             AnimatedAlign(
               alignment: _alignment,
               duration: Duration(seconds: 1),
@@ -113,7 +113,7 @@ class _AnimationScreenState extends State<AnimationScreen>
               },
               child: Text('Toggle AnimatedAlign'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             AnimatedCrossFade(
               duration: Duration(seconds: 1),
               firstChild: Container(
@@ -140,7 +140,7 @@ class _AnimationScreenState extends State<AnimationScreen>
               },
               child: Text('Toggle AnimatedCrossFade'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             AnimatedSwitcher(
               duration: Duration(seconds: 1),
               child: _isSwitched
@@ -167,12 +167,12 @@ class _AnimationScreenState extends State<AnimationScreen>
               },
               child: Text('Toggle AnimatedSwitcher'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: _startAnimation,
               child: Text('Start Fade and Color Transition'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             FadeTransition(
               opacity: _animation,
               child: Container(
@@ -182,7 +182,7 @@ class _AnimationScreenState extends State<AnimationScreen>
                 child: Center(child: Text('Fade and Color Transition')),
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             AnimatedSize(
               duration: Duration(seconds: 1),
 
