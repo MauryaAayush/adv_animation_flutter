@@ -53,7 +53,7 @@ class _AnimationScreenState extends State<AnimationScreen>
         title: const Text('Flutter Animations Demo'),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
