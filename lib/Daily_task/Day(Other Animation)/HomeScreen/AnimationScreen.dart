@@ -50,7 +50,7 @@ class _AnimationScreenState extends State<AnimationScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Animations Demo'),
+        title: const Text('Flutter Animations Demo'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
